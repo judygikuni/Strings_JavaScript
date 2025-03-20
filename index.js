@@ -6,14 +6,14 @@ console.log({b});
 
 //Question 2;
 
-let word = "The quick fox jumped over the lazy dog";
-let c = word.slice(0,4) + "eat" + word.slice(4);
+const food = "The quick fox jumped over the lazy dog";
+let c = food.slice(0,4) + "eat" + food.slice(4);
 console.log({c});
 
 //Question 3;
 
-let x = "The quick brown fox jumps over the lazy dog";
-let y = x.toLowerCase();
+const story = "The quick brown fox jumps over the lazy dog";
+let y = story.toLowerCase();
 let the = y.split("the").length -1;
 let brown = y.split("brown").length -1;
 console.log({the});
@@ -21,10 +21,10 @@ console.log({brown});
 
 //Question 4;
 
-let words = "The pupils are reading in the library";
-let string = "The child was sitting on the table before it fell";
-let are =  words.includes("are");
-let sitting = string.includes("sitting")? true:false;
+let string1 = "The pupils are reading in the library";
+let string2 = "The child was sitting on the table before it fell";
+let are =  string1.includes("are");
+let sitting = string2.includes("sitting")? true:false;
 console.log({are});
 console.log({sitting});
 
@@ -37,6 +37,12 @@ let lower1 = "amazing";
 let lower2 = "UndERneath";
 console.log(lower1.toLowerCase());
 console.log(lower2.toLowerCase());
+
+let title = "A wonderful world"
+   .split(" ")
+   .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+   .join(" ");
+console.log({title});
 
 
 
